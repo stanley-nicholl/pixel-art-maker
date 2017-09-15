@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: DeepPink;
+}
+
+.interface {
+  background-color: Gainsboro;
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin-top: 2rem;
+}
+
+
+/*CANVAS SECTION*/
+
+.canvas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto;
+  border: solid DarkGrey 4px;
+  overflow: hidden;
+}
+
+.pixel {
+  min-width: 12px;
+  min-height: 12px;
+  border: solid Gainsboro 1px;
+  background-color: white;
+}
+
+
+/*TOOL SECTION*/
+
+.color-pick {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid Gainsboro;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.crimson .chocolate .darkgoldenrod .sandybrown .burlywood .bisque .peachpuff .lightyellow .yellow .greenyellow .lime .seagreen .forestgreen .darkgreen .navy .blue .dodgerblue .cornflowerblue .blueviolet .darkmagenta .indigo .fuscia
