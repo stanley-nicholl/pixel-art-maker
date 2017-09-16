@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
+
   var createGrid = function(){
     let canvas = document.getElementById('canvas')
     for(let i = 0; i < 4851; i++){
@@ -25,4 +26,35 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   createColorTool()
+
+var colors = document.getElementsByClassName('color-pick')
+var showSelectedColor = document.getElementById("current-color")
+var selectedColor
+for(let i = 0; i < colors.length; i++){
+  var color = colors[i]
+  color.addEventListener('click', function(event){
+    var color = event.target
+    selectedColor = color.style.backgroundColor
+    showSelectedColor.style.backgroundColor = selectedColor
+
+  })
+}
+
+var pixels = document.getElementsByClassName('pixel')
+for(let j = 0; j < pixels.length; j++){
+  var pixel = pixels[j]
+  pixel.addEventListener('click', function(event){
+    var pixel = event.target;
+    pixel.style.backgroundColor = selectedColor
+  })
+}
+
+var submit = document.getElementById('submit')
+submit.addEventListener('click', function(event){
+  for(let k =0; k < pixels.length; k++){
+    pixels[k].style.backgroundColor = 'white'
+  }
+  showSelectedColor.style.backgroundColor = 'Gainsboro'
+})
+
 })
