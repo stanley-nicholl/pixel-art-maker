@@ -1,5 +1,13 @@
 # Pixel Art Maker
 
+Features to add:
+0-screen size for 13 inch laptop
+1-save canvas locally
+2-submit canvas for display
+3-side scroll of submitted pictures
+4-user can select an image to copy
+5-user can toggle zoom selected image
+
 In this exercise, you'll create your own pixel art maker which will allow a user to choose colors from a palette and then paint pixel art. The interface is completely up to you, but it could look something like this.
 
 ![Example of Pixel Art Maker](pixel-art-maker-alt.png)
